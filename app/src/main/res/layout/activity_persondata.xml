@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.twogroup.biggift.main.activity.PersondataActivity">
+
+    <RelativeLayout
+
+        android:id="@+id/xinxi"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F84E4E">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="个人资料"
+            android:textColor="#FFFAFA"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/youce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="22dp"
+            android:text="保存"
+            android:layout_marginRight="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/fanhui"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="18dp"
+            android:src="@mipmap/abc_ic_ab_back_holo_dark"
+
+            />
+    </RelativeLayout>
+<ImageView
+    android:id="@+id/tookphone"
+    android:layout_width="100dp"
+    android:src="@mipmap/ic_launch"
+    android:layout_height="100dp"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true" />
+</RelativeLayout>

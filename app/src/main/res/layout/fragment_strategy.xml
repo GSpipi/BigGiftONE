@@ -1,0 +1,273 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical"
+    tools:context="com.twogroup.biggift.main.gaoshuai.StrategyFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EAEAEA"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="专题"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/look_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:text="查看全部"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <HorizontalScrollView
+
+                    android:id="@+id/horizon_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:fillViewport="false"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            style="@style/classify_image"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/classify_img_scroll" />
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            style="@style/classify_image"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/classify_img_scroll" />
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            style="@style/classify_image"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/classify_img_scroll" />
+
+                        <ImageView
+                            android:id="@+id/img4"
+                            style="@style/classify_image"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/classify_img_scroll" />
+
+                        <ImageView
+                            android:id="@+id/img5"
+                            style="@style/classify_image"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/classify_img_scroll" />
+
+                        <ImageView
+                            android:id="@+id/img6"
+                            style="@style/classify_image"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/classify_img_scroll" />
+
+                        <ImageView
+                            android:id="@+id/img7"
+                            style="@style/classify_image"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/classify_img_scroll" />
+
+                        <ImageView
+                            android:id="@+id/img8"
+                            style="@style/classify_image"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/classify_img_scroll" />
+
+                        <ImageView
+                            android:id="@+id/img9"
+                            style="@style/classify_image"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/classify_img_scroll" />
+
+                        <ImageView
+                            android:id="@+id/img10"
+                            style="@style/classify_image"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/classify_img_scroll" />
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/classify_strategy_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000" />
+
+                <GridView
+                    android:id="@+id/classify_strategy_gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center_horizontal"
+                    android:columnWidth="60dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="4"
+                    android:paddingTop="10dp"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp">
+
+                </GridView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/classify_strategy_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000" />
+
+                <GridView
+                    android:id="@+id/classify_strategy_gridview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:columnWidth="60dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="4"
+                    android:paddingTop="10dp"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp">
+
+                </GridView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/classify_strategy_title3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000" />
+
+                <GridView
+                    android:id="@+id/classify_strategy_gridview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:columnWidth="60dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="4"
+                    android:paddingTop="10dp"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp">
+
+                </GridView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/classify_strategy_title4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000" />
+
+                <GridView
+                    android:id="@+id/classify_strategy_gridview4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:columnWidth="60dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="4"
+                    android:paddingTop="10dp"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp">
+
+                </GridView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

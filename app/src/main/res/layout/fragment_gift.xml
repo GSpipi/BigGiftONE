@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".gaoshuai.GiftFragment">
+
+    <RelativeLayout
+        android:id="@+id/gift_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/gift_category_guide" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginLeft="4dp"
+                android:text="选礼神器"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/arrow_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line1_aa"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/gift_top"
+        android:background="#EAEAEA" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line1_aa">
+
+        <ScrollView
+            android:id="@+id/gift_scrollView"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+
+            android:scrollbars="none">
+
+            <RadioGroup
+                android:id="@+id/gift_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton1"
+                    style="@style/gift_radiobutton"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton2"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton3"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton4"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton5"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton6"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton7"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton8"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton9"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton10"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton11"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton12"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton13"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton14"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton15"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton16"
+                    style="@style/gift_radiobutton" />
+
+                <RadioButton
+                    android:id="@+id/gift_radiobutton17"
+                    style="@style/gift_radiobutton" />
+            </RadioGroup>
+        </ScrollView>
+
+        <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView
+            android:id="@+id/classify_gift_headGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/gift_scrollView"
+            android:background="#fff"
+            android:numColumns="3"
+            android:padding="10dp"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

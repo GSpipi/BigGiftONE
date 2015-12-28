@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tianye.HotFragment">
+    <RelativeLayout
+
+        android:id="@+id/hot_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F84E4E">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="热门"
+            android:textColor="#FFFAFA"
+            android:textSize="20sp" />
+
+
+
+
+    </RelativeLayout>
+
+
+    <!--numColumns="auto_fit"  列数设置为自动
+        columnWidth   每列的的宽度，也就是Item的宽度
+        android:stretchMode="columnWidth"  缩放与列宽大小同步
+        android:verticalSpacing="10dp"  垂直边距
+         android:horizontalSpacing="10dp" 水平边距-->
+    <GridView
+        android:background="@mipmap/ic_gridbackground"
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchMode="columnWidth"
+        android:numColumns="auto_fit"
+        android:columnWidth="140dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp" >
+    </GridView>
+
+</LinearLayout>

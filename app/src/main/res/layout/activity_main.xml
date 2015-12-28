@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/id_group"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/id_ra1"
+            style="@style/radiogroup"
+            android:checked="true"
+            android:drawableTop="@drawable/main_radio1"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/id_ra2"
+            style="@style/radiogroup"
+            android:drawableTop="@drawable/main_radio2"
+            android:text="热门"
+           />
+
+        <RadioButton
+            android:id="@+id/id_ra3"
+            style="@style/radiogroup"
+            android:drawableTop="@drawable/main_radio3"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/id_ra4"
+            style="@style/radiogroup"
+            android:drawableTop="@drawable/main_radio4"
+            android:text="我" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/id_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/id_group"
+        android:orientation="vertical"></LinearLayout>
+</RelativeLayout>

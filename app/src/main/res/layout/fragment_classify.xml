@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".gaoshuai.ClassifyFragment">
+
+    <RelativeLayout
+
+        android:id="@+id/hot_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F84E4E"
+        android:gravity="center_vertical">
+
+        <RadioGroup
+            android:id="@+id/classify_radiogroup"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/classify_topbutton"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <RadioButton
+                android:id="@+id/classify_strategy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/classify_topbutton1"
+                android:button="@null"
+                android:gravity="center"
+                android:checked="true"
+                android:text="攻略"
+                android:textColor="@drawable/classify_top_text">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/classify_gift"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/classify_topbutton2"
+                android:button="@null"
+                android:gravity="center"
+                android:text="礼物"
+                android:textColor="@drawable/classify_top_text">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+
+        <ImageView
+            android:id="@+id/classify_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/abc_ic_search" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/classify_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+</LinearLayout>

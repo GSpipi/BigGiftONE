@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        >
+        <ImageView
+            android:id="@+id/hp_lv_imageview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:scaleType="fitXY"
+
+           />
+
+        <RelativeLayout
+            android:layout_marginTop="0dp"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="20dp" >
+            <!--android:background="@drawable/image_round_shape"-->
+
+            <ImageView
+                android:id="@+id/hp_lv_imageview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/hp_text_imageteo"
+                android:scaleType="fitXY"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/hp_list_itemtwo"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:id="@+id/hp_lv_imageview3" />
+
+            <TextView
+                android:id="@+id/item_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="次数所在"
+                android:gravity="center_vertical"
+                  android:textColor="#ffffff"
+                android:textSize="7sp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_below="@+id/hp_lv_imageview3"
+                android:layout_alignLeft="@+id/hp_lv_imageview3"
+                android:layout_alignStart="@+id/hp_lv_imageview3"
+                android:layout_marginTop="7dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_gravity="center_horizontal|bottom">
+<!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:src="@mipmap/hp_list_itemthree"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentEnd="true" />-->
+
+            <TextView
+
+
+                android:id="@+id/title"
+                android:layout_width="343dp"
+                android:layout_height="62dp"
+                android:text="字体啊啊啊啊啊啊啊啊啊啊啊啊啊"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="right|bottom"
+                android:gravity="center_vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="399dp"-->
+            <!--android:layout_height="212dp"-->
+            <!--android:src="@mipmap/hp_text_image"-->
+          <!---->
+             <!--/>-->
+
+    </FrameLayout>
+
+
+</RelativeLayout>

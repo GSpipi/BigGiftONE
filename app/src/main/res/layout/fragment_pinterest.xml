@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.twogroup.biggift.main.lkp.PinterestFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <HorizontalScrollView
+        android:id="@+id/id_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/id_group"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/id_butt1"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/pubu_top"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="美女1" />
+
+            <RadioButton
+                android:id="@+id/id_butt2"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/pubu_top"
+                android:button="@null"
+                android:gravity="center"
+
+                android:text="美女2" />
+
+            <RadioButton
+                android:id="@+id/id_butt3"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/pubu_top"
+                android:button="@null"
+                android:gravity="center"
+                android:text="美女3" />
+
+
+            <RadioButton
+                android:id="@+id/id_butt5"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/pubu_top"
+                android:button="@null"
+                android:gravity="center"
+                android:text="美女5" />
+            <RadioButton
+                android:id="@+id/id_butt4"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/pubu_top"
+                android:button="@null"
+                android:gravity="center"
+                android:text="向日葵" />
+
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/id_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".lkp.MeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_profile" />
+
+        <ImageView
+            android:id="@+id/id_userimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:scaleType="fitCenter"
+
+            android:src="@mipmap/ig_profile_photo_default" />
+
+        <TextView
+            android:id="@+id/id_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_userimage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="未登录" />
+
+        <TextView
+            android:id="@+id/id_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/id_twocode"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/id_userimage"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp"
+            android:layout_toEndOf="@+id/id_userimage"
+            android:layout_toRightOf="@+id/id_userimage"
+            android:src="@mipmap/ic_toolkit_zebra_scanner" />
+
+        <ImageView
+            android:id="@+id/id_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/id_twocode"
+            android:layout_toRightOf="@id/id_twocode"
+            android:src="@mipmap/me_settings" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/cart"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/icon_cart"
+            android:gravity="center"
+            android:text="@string/cart" />
+
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/icon_order"
+            android:gravity="center"
+            android:text="@string/order" />
+
+        <TextView
+            android:id="@+id/coupon"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/icon_coupon"
+            android:gravity="center"
+            android:text="@string/coupon" />
+
+        <TextView
+            android:id="@+id/service"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/icon_service"
+            android:gravity="center"
+            android:text="@string/service" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#E1E1E1" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/id_meradiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/bt11"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/likeitem"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="喜欢的礼物"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/bt22"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/likeitem"
+            android:button="@null"
+            android:gravity="center"
+            android:text="喜欢的攻略"
+            android:textSize="18sp" />
+    </RadioGroup>
+</RelativeLayout>
+
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

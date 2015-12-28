@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#53d2cfcb"
+
+    tools:context="com.twogroup.biggift.main.activity.LoginActivity">
+
+    <RelativeLayout
+
+        android:id="@+id/hot_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F84E4E">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="登录"
+            android:textColor="#FFFAFA"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="22dp"
+            android:text="注册"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="18dp"
+            android:src="@mipmap/abc_ic_ab_back_holo_dark"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hot_relativeLayout">
+
+        <View
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#d2d2d2" />
+
+        <EditText
+            android:id="@+id/id_numphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:height="40dip"
+            android:hint="手机号"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/id_pasword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_numphone"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:height="40dip"
+            android:hint="密码"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/id_login"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/id_pasword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dneglu"
+            android:text="登录" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="使用社交账号登录"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageweibo"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_share_sina_weibo"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imagewe"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_share_wechat"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imageqq"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_share_tencent_qq"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

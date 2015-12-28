@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.twogroup.biggift.main.activity.SettingsActivity">
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/scrollView" >-->
+    <RelativeLayout
+
+        android:id="@+id/Setting"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F84E4E">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="Setting"
+            android:textColor="#FFFAFA"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/fanhui"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="18dp"
+            android:src="@mipmap/abc_ic_ab_back_holo_dark"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Setting"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        //邀请好友
+
+        <RelativeLayout
+            android:id="@+id/setting1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:src="@mipmap/ic_more_action_share" />
+
+            <TextView
+                android:id="@+id/pubuliu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="41dp"
+                android:layout_marginStart="41dp"
+
+
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:text="笑看瀑布流" />
+        </RelativeLayout>
+        //评分
+
+        <RelativeLayout
+            android:id="@+id/setting2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/interspace"
+            >
+
+            <ImageView
+                android:id="@+id/imageView1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:src="@mipmap/more_icon_score" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="38dp"
+                android:layout_marginStart="38dp"
+                android:layout_toEndOf="@+id/imageView1"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="给我们评分吧啦吧啦" />
+        </RelativeLayout>
+        //意见反馈
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/interspace"
+            android:id="@+id/setting3">
+
+            <ImageView
+                android:id="@+id/imageView2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:src="@mipmap/ic_more_feedback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginStart="45dp"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView2"
+                android:text="意见反过来" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:src="@mipmap/settingarrows" />
+
+
+        </RelativeLayout>
+        //我要投稿
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/interspace"
+            android:id="@+id/setting4">
+
+            <ImageView
+                android:id="@+id/imageView3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:src="@mipmap/ic_more_contribution" />
+
+            <TextView
+                android:id="@+id/invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48dp"
+                android:layout_marginStart="48dp"
+                android:layout_toEndOf="@+id/imageView3"
+                android:layout_toRightOf="@+id/imageView3"
+                android:text="邀请你的好丽友" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:src="@mipmap/settingarrows" />
+        </RelativeLayout>
+        //我的身份
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/interspace"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:src="@mipmap/checkusertype_icon_identity" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginStart="45dp"
+                android:layout_toEndOf="@+id/imageView4"
+                android:layout_toRightOf="@+id/imageView4"
+                android:text="身份斯巴达" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:src="@mipmap/settingarrows" />
+        </RelativeLayout>
+
+
+        //空隙作用
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="#d9d2e9"></RelativeLayout>
+
+
+        //接收消息推送
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/interspace"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView5"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:src="@mipmap/ic_more_notification" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="49dp"
+                android:layout_marginStart="49dp"
+                android:layout_toEndOf="@+id/imageView5"
+                android:layout_toRightOf="@+id/imageView5"
+                android:text="接收消息推送" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp" />
+        </RelativeLayout>
+        //检查更新
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/interspace"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView6"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:src="@mipmap/ic_more_action_check_update" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="59dp"
+                android:layout_marginStart="59dp"
+                android:layout_toEndOf="@+id/imageView6"
+                android:layout_toRightOf="@+id/imageView6"
+                android:text="检查更新" />
+
+
+        </RelativeLayout>
+        //清除缓存
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/interspace"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView7"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:src="@mipmap/ic_more_action_clean_cache" />
+
+            <TextView
+                android:id="@+id/id_cache_cleaner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@+id/imageView7"
+                android:layout_toRightOf="@+id/imageView7"
+                android:text="扔掉缓存" />
+            <TextView
+                android:id="@+id/cachenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0B"
+                android:layout_marginRight="28dp"
+                android:layout_marginEnd="28dp"
+                android:layout_alignBottom="@+id/imageView7"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:id="@+id/imageView8"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:src="@mipmap/ic_more_about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="41dp"
+                android:layout_marginStart="41dp"
+                android:layout_toEndOf="@+id/imageView8"
+                android:layout_toRightOf="@+id/imageView8"
+                android:text="关于BigGift" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:src="@mipmap/settingarrows" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--</ScrollView>-->
+</RelativeLayout>
